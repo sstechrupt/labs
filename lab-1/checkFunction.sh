@@ -6,10 +6,10 @@ cd /home/project
 # Verify the directory and file creation
 checkDirectoryAndFiles() {
   if [ -d lab_directory ] && [ -f lab_directory/file1.txt ] && [ -f lab_directory/file2.txt ] && [ -f lab_directory/file3.txt ]; then
-    echo "All required files and directory exist."
+    echo "CheckFunctionPassed"
     return 0
   else
-    echo "Some files or the directory are missing."
+    echo "CheckFunctionFailed"
     return 1
   fi
 }
@@ -17,10 +17,10 @@ checkDirectoryAndFiles() {
 # Verify the contents of file1.txt
 checkFileContents() {
   if grep -q "Hello, World!" lab_directory/file1.txt && grep -q "Welcome to the lab." lab_directory/file1.txt; then
-    echo "File contents are correct."
+    echo "CheckFunctionPassed"
     return 0
   else
-    echo "File contents are incorrect."
+    echo "CheckFunctionFailed"
     return 1
   fi
 }
@@ -28,10 +28,10 @@ checkFileContents() {
 # Verify the text manipulation in file2.txt
 checkTextManipulation() {
   if grep -q "Hi, World!" lab_directory/file2.txt && grep -q "Welcome to the lab." lab_directory/file2.txt; then
-    echo "Text manipulation is correct."
+    echo "CheckFunctionPassed"
     return 0
   else
-    echo "Text manipulation is incorrect."
+    echo "CheckFunctionFailed"
     return 1
   fi
 }
@@ -39,10 +39,10 @@ checkTextManipulation() {
 # Verify the script creation and execution
 checkScriptExecution() {
   if /bin/bash lab_directory/script.sh | grep -q "This is a script."; then
-    echo "Script execution is correct."
+    echo "CheckFunctionPassed"
     return 0
   else
-    echo "Script execution is incorrect."
+    echo "CheckFunctionFailed"
     return 1
   fi
 }
