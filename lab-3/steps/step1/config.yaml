@@ -1,0 +1,3 @@
+title: Creating Environment Variables
+slug: step-1
+checkFunction: checkEnvVariableCreation

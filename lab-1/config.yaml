@@ -1,5 +1,5 @@
 title: Basic Shell Scripting
 slug: lab-1
 short_description: This is the description for lab 1
-lab_evironment: vscode
+lab_environment: vscode
 lab_image_url: cloudlearning.azurecr.io/tr-code-server:latest

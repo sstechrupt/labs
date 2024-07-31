@@ -1,0 +1,3 @@
+title: Using Environment Variables in Scripts
+slug: step-2
+checkFunction: checkEnvVariableUsage
